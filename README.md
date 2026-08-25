@@ -89,6 +89,8 @@ The system automatically connects to your mobile hotspot and uploads sensor data
   - `Field 2`: Humidity (% RH)
   - `Field 3`: Alert Status (`0` = Normal, `1` = Alert Triggered)
 ---
+
+
 ## 📁 Software Component Architecture
 
 major_Edge_cloud/

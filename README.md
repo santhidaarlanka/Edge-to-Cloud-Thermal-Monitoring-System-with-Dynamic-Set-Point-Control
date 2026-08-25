@@ -70,18 +70,6 @@ The system continuously acquires real-time ambient temperature and humidity data
 
 ---
 
-## 📊 System Architecture & Data Flow
-
-```mermaid
-graph TD
-    A[DHT11 Sensor P0.4] -->|Single Wire Pulse| B[LPC2148 Microcontroller]
-    C[4x4 Matrix Keypad P1.16-P1.23] -->|EINT0 Trigger P0.16| B
-    B <-->|I2C SCL0/SDA0 P0.2/P0.3| D[AT24C256 EEPROM]
-    B -->|8-bit Data Bus P0.8-P0.15| E[16x2 LCD Display]
-    B -->|Active High P0.7| F[Piezo Buzzer Alert]
-    B <-->|UART0 TXD0/RXD0 P0.0/P0.1| G[ESP-01 Wi-Fi Module]
-    H[Hardware RTC Peripheral] -->|3-Minute Interval Timer| B
-    G -->|Wi-Fi Hotspot: Sandhya| I[ThingSpeak IoT Cloud]
 ```
 
 ---

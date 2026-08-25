@@ -110,57 +110,24 @@ major_Edge_cloud/
 ├── Edge_cloud.uvproj           # Keil uVision Project file
 └── Edge_cloud.hex              # Compiled Intel HEX binary ready for flashing
 
-## 📁 Firmware Repository Structure
+### 1. Build the Project in Keil uVision
+1. Open [`Edge_cloud.uvproj`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.uvproj) in **Keil uVision4** or **Keil uVision5**.
+2. Click **Project -> Rebuild all target files** (`F7`).
+3. Verify that the compilation completes with `0 Error(s), 0 Warning(s)`.
+4. The output binary [`Edge_cloud.hex`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.hex) will be generated in the project folder.
 
-```
-india_pro/
-├── assets/                             # Real-time hardware demonstration images
-│   ├── hardware_setup.jpg              # Board overview with peripherals
-│   ├── system_boot.jpg                 # Initialization LCD screen
-│   ├── wifi_at_test.jpg                # ESP-01 AT command verification
-│   ├── lcd_telemetry.jpg               # Live temperature/humidity LCD display
-│   └── thingspeak_ok.jpg               # ThingSpeak HTTP transmission OK
-└── vector_project/
-    └── major_Edge_cloud/
-        ├── main.c                      # Main execution loop & system state machine
-        ├── dht11.c / dht11.h           # Single-wire DHT11 sensor driver & checksum logic
-        ├── esp01.c / esp01.h           # ESP-01 Wi-Fi & ThingSpeak HTTP GET client
-        ├── rtc.c / rtc.h               # LPC2148 Hardware RTC initialization & timers
-        ├── external_interrupts_test.c  # EINT0 ISR & dynamic setpoint keypad scanner
-        ├── i2c.c / i2C.h               # Hardware I2C Master driver
-        ├── i2c_eeprom.c / i2c_eeprom.h # AT24C256 non-volatile read/write routines
-        ├── kpm.c / kpm.h               # 4x4 Matrix Keypad scanning & number reading
-        ├── lcd.c / lcd.h               # 16x2 Character LCD driver (8-bit mode)
-        ├── uart0.c / uart0.h           # UART0 interrupt serial handler
-        ├── delay.c / delay.h           # Microsecond and millisecond delay helpers
-        ├── global.h                    # Shared global setpoint & alert variables
-        ├── defines.h                   # Bit-manipulation macros (SETBIT, WRITEBIT)
-        ├── Startup.s                   # LPC2148 ARM assembly startup & vector table
-        ├── Edge_cloud.uvproj           # Keil uVision project file
-        └── Edge_cloud.hex              # Compiled Intel HEX firmware binary
-```
-
----
-
-## 🛠️ Building & Flashing Guide
-
-### 1. Build using Keil uVision
-1. Launch **Keil uVision4** or **Keil uVision5**.
-2. Open project file: `vector_project/major_Edge_cloud/Edge_cloud.uvproj`.
-3. Select **Project -> Rebuild all target files** (or press `F7`).
-4. Ensure build output reports: `0 Error(s), 0 Warning(s)`. The target binary [`Edge_cloud.hex`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.hex) will be generated.
-
-### 2. Flashing via Flash Magic (ISP)
-1. Connect Vector ARM7 Development Board to PC via USB-to-UART converter.
-2. Launch **Flash Magic** and set:
+### 2. Flash to LPC2148 Development Kit
+1. Connect your LPC2148 board to your PC using a USB-to-UART converter (COM port).
+2. Open **Flash Magic**.
+3. Configure settings:
    - **Device**: LPC2148
-   - **COM Port**: Select your active COM Port (e.g. `COM3`)
-   - **Baud Rate**: `9600`
+   - **COM Port**: Select your COM Port (e.g., COM3)
+   - **Baud Rate**: 9600 or 19200
    - **Interface**: None (ISP)
-   - **Oscillator Frequency (MHz)**: `12.0`
-3. Load binary file: `Edge_cloud.hex`.
-4. Select **Erase all Flash + Code Rd Protect**.
-5. Hold the **ISP Button** on the development board, hit **Reset**, and click **Start** in Flash Magic.
+   - **Oscillator Frequency (MHz)**: 12.0
+4. Browse and select [`Edge_cloud.hex`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.hex).
+5. Check **Erase all Flash+Code Rd Protect**.
+6. Press the **ISP/Boot button** on your LPC2148 kit and click **Start** in Flash Magic.
 
 ---
 

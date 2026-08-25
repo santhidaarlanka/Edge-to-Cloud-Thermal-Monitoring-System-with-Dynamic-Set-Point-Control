@@ -110,7 +110,9 @@ major_Edge_cloud/
 ├── Edge_cloud.uvproj           # Keil uVision Project file
 └── Edge_cloud.hex              # Compiled Intel HEX binary ready for flashing
 
+```
 
+---
 
 ### 1. Build the Project in Keil uVision
 1. Open [`Edge_cloud.uvproj`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.uvproj) in **Keil uVision4** or **Keil uVision5**.

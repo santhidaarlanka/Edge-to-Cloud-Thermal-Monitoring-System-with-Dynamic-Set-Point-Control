@@ -1,4 +1,4 @@
-
+<img width="1448" height="1086" alt="sa-1" src="https://github.com/user-attachments/assets/799a1a29-8dd7-426b-be7f-b718d72ddb15" />
 
 # Edge-to-Cloud Thermo-Humidity Monitoring & Control System
 
@@ -18,7 +18,8 @@ The system continuously acquires real-time ambient temperature and humidity data
 <img width="1403" height="1121" alt="Edge-to-Cloud Thermo Monitoring System" src="https://github.com/user-attachments/assets/2a2e30a3-8cbb-4031-842c-f6fe7e5ee32a" />
 
 ## 📷 Hardware Showcase & Real-Time Operation
-![alt text](image1_system_boot.jpg)
+![alt text](<img width="1448" height="1086" alt="sa-1" src="https://github.com/user-attachments/assets/3beceaf0-c1c4-4dc8-9bcd-bb1b00bddfb2" />
+)
 ![alt text](image2_connecting_cloud.jpg)
 ![alt text](image3_lcd_telemetry.jpg)
 ![alt text](image4_setpoint_entry.jpg)

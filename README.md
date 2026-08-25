@@ -99,29 +99,29 @@ The system automatically connects to your mobile hotspot and uploads sensor data
   - `Field 3`: Alert Status (`0` = Normal, `1` = Alert Triggered)
 ---
 
-
 ## 📁 Software Component Architecture
 
+```
 major_Edge_cloud/
 ├── main.c                      # System entry point, main loop & LCD state machine
 ├── startup_LPC2148.c           # Pure C system bootstrapper
-├── rtc.h / rtc.c               # LPC2148 hardware RTC driver (3-min interval timer)
+├── rtc.h / rtc.c               # LPC2148 Hardware RTC driver (3-min interval timer)
 ├── esp01.c / esp01.h           # ESP-01 Wi-Fi driver & ThingSpeak HTTP client
 ├── dht11.c / dht11.h           # DHT11 sensor driver & 8-bit checksum calculation
 ├── external_interrupts_test.c  # EINT0 interrupt handler & dual set-point menu
-├── i2c.c / i2c.h               # LPC2148 hardware I2C driver
+├── i2c.c / i2C.h               # LPC2148 hardware I2C driver
 ├── i2c_eeprom.c / i2c_eeprom.h # AT24C256 EEPROM read/write functions
-├── kpm.c / kpm.h               # 4×4 Matrix Keypad scanner (supports 0-9, *, #)
-├── lcd.c / lcd.h               # 16×2 Character LCD driver (8-bit mode)
+├── kpm.c / kpm.h               # 4x4 Matrix Keypad scanner (supports 0-9, *, #)
+├── lcd.c / lcd.h               # 16x2 Character LCD driver (8-bit mode)
 ├── uart0.c / uart0.h           # UART0 interrupt-driven serial driver
-├── delay.c / delay.h            # Millisecond and microsecond delay utilities
+├── delay.c / delay.h           # Millisecond and microsecond delay utilities
 ├── global.h                    # Global state variables (setpoint, humidity_setpoint, alert_flag)
 ├── Edge_cloud.uvproj           # Keil uVision Project file
 └── Edge_cloud.hex              # Compiled Intel HEX binary ready for flashing
-
 ```
 
 ---
+
 
 ### 1. Build the Project in Keil uVision
 1. Open [`Edge_cloud.uvproj`](file:///c:/Users/HP/Downloads/india_pro/vector_project/major_Edge_cloud/Edge_cloud.uvproj) in **Keil uVision4** or **Keil uVision5**.

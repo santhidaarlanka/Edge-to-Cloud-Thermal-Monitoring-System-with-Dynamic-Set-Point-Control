@@ -82,9 +82,6 @@ The system continuously acquires real-time ambient temperature and humidity data
 
 ---
 
-```
-
----
 ## 🌐 Cloud Integration Details (ThingSpeak)
 
 The system automatically connects to your mobile hotspot and uploads sensor data to your ThingSpeak channel.
@@ -155,6 +152,3 @@ major_Edge_cloud/
 
 ---
 
-## 📜 License
-
-This project is open-source and released under the **[MIT License](LICENSE)**. Feel free to use, modify, and distribute it for academic or industrial embedded projects.

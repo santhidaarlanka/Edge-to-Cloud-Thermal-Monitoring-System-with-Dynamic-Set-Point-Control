@@ -21,10 +21,20 @@ The system continuously acquires real-time ambient temperature and humidity data
 
 <img width="1448" height="1086" alt="sa-1" src="https://github.com/user-attachments/assets/bef71ccf-7369-4569-abb6-02b128453a05" />
 
+<img width="1448" height="968" alt="sa-2" src="https://github.com/user-attachments/assets/8c75f18b-cd89-4567-bcdb-ea6967fc3cbf" />
+
 ![alt text](image2_connecting_cloud.jpg)
-![alt text](image3_lcd_telemetry.jpg)
-![alt text](image4_setpoint_entry.jpg)
-![alt text](image5_thingspeak_ok.jpg)
+
+<img width="1448" height="1086" alt="sa-4" src="https://github.com/user-attachments/assets/b87e98ee-5293-43ae-8ce9-4cdd1744e8df" />
+
+<img width="1448" height="1086" alt="sa-5" src="https://github.com/user-attachments/assets/dc6d2209-7554-4ac2-8f1f-c50d127ec6d8" />
+
+<img width="720" height="512" alt="tm" src="https://github.com/user-attachments/assets/4a6dd733-09b9-4d93-8755-ce47ee12cc6d" />
+
+<img width="720" height="564" alt="hm" src="https://github.com/user-attachments/assets/377631c4-4d27-42dc-b59e-716aa67a557c" />
+
+<img width="720" height="552" alt="setpoi" src="https://github.com/user-attachments/assets/a1d57185-d908-45b9-9c2c-c0e997aec004" />
+
 ## ✨ Key System Features
 
 - **High-Precision Environmental Sensing**:

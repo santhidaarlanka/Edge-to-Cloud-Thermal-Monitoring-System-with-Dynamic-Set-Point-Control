@@ -1,4 +1,4 @@
-<img width="1448" height="1086" alt="sa-1" src="https://github.com/user-attachments/assets/799a1a29-8dd7-426b-be7f-b718d72ddb15" />
+
 
 # Edge-to-Cloud Thermo-Humidity Monitoring & Control System
 

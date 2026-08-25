@@ -85,24 +85,23 @@ graph TD
 ```
 
 ---
+## 🌐 Cloud Integration Details (ThingSpeak)
 
-## 🌐 ThingSpeak Cloud API Configuration
+The system automatically connects to your mobile hotspot and uploads sensor data to your ThingSpeak channel.
 
-The system uploads channel telemetry via HTTP GET requests formatted as follows:
+- **Hotspot Credentials**:
+  - **SSID**: `Santhi`
+  - **Password**: `santhi235`
+- **ThingSpeak Channel Details**:
+  - **Channel ID**: `3464502`
+  - **Write API Key**: `COM3WNTIAZSA0EM2`
+  - **Read API Key**: `PKMYJKK5MCI8FZ82`
+- **Channel Field Definitions**:
+  - `Field 1`: Temperature (°C)
+  - `Field 2`: Humidity (% RH)
+  - `Field 3`: Alert Status (`0` = Normal, `1` = Alert Triggered)
 
-```http
-GET /update?api_key=7JY9E3QDN7XTQ2RJ&field1=28&field2=55&field3=0 HTTP/1.1
-Host: api.thingspeak.com
-Connection: close
-```
 
-### Channel Mapping
-- **Channel ID**: `3421650`
-- **Write API Key**: `COM3WNTIAZSA0EM2`
-- **Read API Key**: `PKMYJKK5MCI8FZ82`
-- **Field 1**: Temperature (°C)
-- **Field 2**: Relative Humidity (% RH)
-- **Field 3**: Alert Flag (`0` = Normal, `1` = Threshold Exceeded)
 
 ---
 

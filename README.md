@@ -15,7 +15,7 @@ The system continuously acquires real-time ambient temperature and humidity data
 ---
 ## 📊 Block Diagram
 
-![Edge-to-Cloud Thermo Monitoring System Block Diagram](a_clean_technical_block_diagram_infographic_on_a_w.png)
+<img width="1403" height="1121" alt="Edge-to-Cloud Thermo Monitoring System" src="https://github.com/user-attachments/assets/2a2e30a3-8cbb-4031-842c-f6fe7e5ee32a" />
 
 ## 📷 Hardware Showcase & Real-Time Operation
 ![alt text](image1_system_boot.jpg)
